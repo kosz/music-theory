@@ -25,9 +25,6 @@ function getInSequenceRange(idx) {
 }
 
 function findInSequenceRange(idx) {
-  if (idx < 12) {
-    return idx;
-  } else {
-    return findInSequenceRange(idx - 12);
-  }
+  return idx < noteSequence.length ?
+    idx : findInSequenceRange(idx - noteSequence.length);
 }

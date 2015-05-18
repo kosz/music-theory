@@ -18,8 +18,10 @@ var intervals = [
 ];
 
 intervals.forEach(function(interval, idx) {
-  exports[camelCase(interval)] = function(start) {
-    return start + idx;
-  };
+  exports[camelCase(interval)] =
+    exports[interval] = 
+      function(start) {
+        return start + idx;
+      };
 });
 

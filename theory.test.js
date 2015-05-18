@@ -14,6 +14,7 @@ describe('theory', function() {
     expect(theory.getNoteName(83)).to.equal('B');
   });
   it('can calculate chords', function () {
-    expect(theory.major(0)).to.equal([0, 4, 7]);
+    expect(theory.major(0)).to.eql([0, 4, 7]);
+    expect(theory.minor(0)).to.eql([0, 3, 7]);
   });
 });
