@@ -1,0 +1,23 @@
+{
+  "name": "music-theory",
+  "version": "0.0.1",
+  "description": "Music Theory Functions",
+  "main": "theory.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "music",
+    "theory",
+    "functions"
+  ],
+  "author": "kosz",
+  "license": "ISC",
+  "dependencies": {
+    "camel-case": "^1.1.2",
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5",
+    "ramda": "^0.14.0",
+    "sinon": "^1.14.1"
+  }
+}
