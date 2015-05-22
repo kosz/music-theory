@@ -19,7 +19,7 @@ var intervals = [
 
 intervals.forEach(function(interval, idx) {
   exports[camelCase(interval)] =
-    exports[interval] = 
+    exports[interval] =
       function(start) {
         return start + idx;
       };
